@@ -1,4 +1,4 @@
-function iteratorToStream(iterator: any) {
+function iteratorToStream(iterator: AsyncGenerator<Uint8Array<ArrayBufferLike>>) {
   return new ReadableStream({
     async pull(controller) {
       const { value, done } = await iterator.next();

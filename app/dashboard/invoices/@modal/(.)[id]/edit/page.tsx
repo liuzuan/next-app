@@ -3,7 +3,7 @@ import { Modal } from '@/app/ui/modal'
 
 export default async function Page(props: { params: Promise<{ id: string }> }) {
   return (
-    <Modal>
+    <Modal title="Edit Invoice">
       <EditPage {...props} />
     </Modal>
   )
